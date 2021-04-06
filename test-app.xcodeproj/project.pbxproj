@@ -12,6 +12,8 @@
 		3850564A261C5127006A16E3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38505648261C5127006A16E3 /* MainMenu.xib */; };
 		3850564D261C5127006A16E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3850564C261C5127006A16E3 /* main.m */; };
 		3850565C261C57C6006A16E3 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3850565B261C57C6006A16E3 /* test.swift */; };
+		38505686261C6021006A16E3 /* PrefWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38505685261C6021006A16E3 /* PrefWindowView.swift */; };
+		3850568A261C605F006A16E3 /* swift-bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38505689261C605F006A16E3 /* swift-bridge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		3850564E261C5127006A16E3 /* test_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test_app.entitlements; sourceTree = "<group>"; };
 		38505655261C5165006A16E3 /* test-app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-app-Bridging-Header.h"; sourceTree = "<group>"; };
 		3850565B261C57C6006A16E3 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		38505685261C6021006A16E3 /* PrefWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefWindowView.swift; sourceTree = "<group>"; };
+		38505689261C605F006A16E3 /* swift-bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "swift-bridge.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				3850564E261C5127006A16E3 /* test_app.entitlements */,
 				38505655261C5165006A16E3 /* test-app-Bridging-Header.h */,
 				3850565B261C57C6006A16E3 /* test.swift */,
+				38505685261C6021006A16E3 /* PrefWindowView.swift */,
+				38505689261C605F006A16E3 /* swift-bridge.swift */,
 			);
 			path = "test-app";
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 			files = (
 				3850564D261C5127006A16E3 /* main.m in Sources */,
 				3850565C261C57C6006A16E3 /* test.swift in Sources */,
+				3850568A261C605F006A16E3 /* swift-bridge.swift in Sources */,
+				38505686261C6021006A16E3 /* PrefWindowView.swift in Sources */,
 				38505645261C5125006A16E3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
