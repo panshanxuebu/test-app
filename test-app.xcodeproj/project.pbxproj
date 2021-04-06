@@ -11,6 +11,7 @@
 		38505647261C5127006A16E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38505646261C5127006A16E3 /* Assets.xcassets */; };
 		3850564A261C5127006A16E3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38505648261C5127006A16E3 /* MainMenu.xib */; };
 		3850564D261C5127006A16E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3850564C261C5127006A16E3 /* main.m */; };
+		3850565C261C57C6006A16E3 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3850565B261C57C6006A16E3 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		3850564B261C5127006A16E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3850564C261C5127006A16E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3850564E261C5127006A16E3 /* test_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test_app.entitlements; sourceTree = "<group>"; };
+		38505655261C5165006A16E3 /* test-app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-app-Bridging-Header.h"; sourceTree = "<group>"; };
+		3850565B261C57C6006A16E3 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 				3850564B261C5127006A16E3 /* Info.plist */,
 				3850564C261C5127006A16E3 /* main.m */,
 				3850564E261C5127006A16E3 /* test_app.entitlements */,
+				38505655261C5165006A16E3 /* test-app-Bridging-Header.h */,
+				3850565B261C57C6006A16E3 /* test.swift */,
 			);
 			path = "test-app";
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 				TargetAttributes = {
 					3850563F261C5125006A16E3 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -134,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3850564D261C5127006A16E3 /* main.m in Sources */,
+				3850565C261C57C6006A16E3 /* test.swift in Sources */,
 				38505645261C5125006A16E3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,9 +275,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "test-app/test_app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "test-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -278,6 +287,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "us.erlang.test-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "test-app/test-app-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -286,9 +298,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "test-app/test_app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "test-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,6 +310,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "us.erlang.test-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "test-app/test-app-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

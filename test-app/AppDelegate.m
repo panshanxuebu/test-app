@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "test_app-Swift.h" // test-app 要转换成 test_app !!!
 
 @interface AppDelegate ()
 
@@ -16,6 +17,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
+    TestSwift * testSwift = [[TestSwift alloc] init];
+    [testSwift test];
 }
 
 
